@@ -16,6 +16,7 @@ public class RequestSender implements Supplier<Object> {
     @Override
     public Object get() {
         var clazz = entityClassFactory.getEntityClass(entityName);
+        System.out.println("Sending request to :" + endpoint);
         return restTemplate.getForObject(endpoint, clazz);
     }
 }

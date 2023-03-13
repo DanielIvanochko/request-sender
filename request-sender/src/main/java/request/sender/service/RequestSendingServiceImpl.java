@@ -26,7 +26,7 @@ public class RequestSendingServiceImpl implements RequestSendingService {
     @Value("${threads.upper.number}")
     private int upperThreadsNumber;
 
-    @Value("${thread.keepAlive.time}")
+    @Value("${threads.keepAlive.time}")
     private int keepAliveTime;
 
     public void startRequestSending(RequestDto requestDto) {
