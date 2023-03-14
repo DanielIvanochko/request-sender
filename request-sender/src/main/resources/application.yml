@@ -1,0 +1,11 @@
+domain:
+  package:
+    name: "request.sender.domain"
+
+threads:
+  core:
+    number: 50
+  upper:
+    number: 100
+  keepAlive:
+    time: 60
